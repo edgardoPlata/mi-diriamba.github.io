@@ -1,0 +1,69 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dosis:wght@600&family=Work+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.main-header{
+    background-image: url('../Img/d2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+.main-nav{
+    
+    display: flex;
+}
+
+.logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+
+}
+
+ul{
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+ul, li, a{
+   
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+}
+.content-header{
+    color: antiquewhite;
+    background: blue;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-header h1{
+    font-size: 7rem;
+}
+.content-header p{
+    font-size: 1.5rem;
+}
+.content-header a{
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 20px 40px;
+    background: rgb(11, 91, 51);
+    color: white;
+
+}
