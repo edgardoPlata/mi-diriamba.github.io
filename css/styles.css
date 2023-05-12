@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .main-header{
-    background-image: url('../Img/d2.jpg');
+    background-image: url('../Img/parque.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -45,12 +45,13 @@ ul, li, a{
 }
 .content-header{
     color: antiquewhite;
-    background: blue;
+    
     position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .content-header h1{
@@ -58,6 +59,7 @@ ul, li, a{
 }
 .content-header p{
     font-size: 1.5rem;
+    margin: 15px 15px;
 }
 .content-header a{
     font-size: 1.3rem;
