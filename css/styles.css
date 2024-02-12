@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dosis:wght@600&family=Work+Sans&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dosis:wght@600&family=Work+Sans&display=swap');
-
-*{
+* {
     box-sizing: border-box;
 }
-.main-header{
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../Img/parque.jpeg');
+
+body {
+    margin: 0;
+}
+
+.main-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Img/parque.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,42 +18,36 @@
     position: relative;
 }
 
-.main-nav{
-    
+.main-nav {
     display: flex;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.logo{
-    
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    padding: 20px 40px;
+    margin-left: 5%;
+    padding: 20px 2vw;
     font-size: 1.3rem;
     color: white;
-
 }
 
-ul{
-    
+ul {
     display: flex;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 5%;
 }
 
-ul, li, a{
-   
+ul, li, a {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 20px 2vw;
     font-size: 1.3rem;
     color: white;
 }
-.content-header{
+
+.content-header {
     color: antiquewhite;
-    
-    position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,18 +55,57 @@ ul, li, a{
     text-align: center;
 }
 
-.content-header h1{
-    font-size: 7rem;
+.content-header h1 {
+    font-size: 5vw;
 }
-.content-header p{
-    font-size: 1.5rem;
-    margin: 15px 15px;
+
+.content-header p {
+    font-size: 1.5vw;
+    margin: 1.5vw;
 }
-.content-header a{
-    font-size: 1.3rem;
+
+.content-header a {
+    font-size: 1.3vw;
     display: inline-block;
-    padding: 20px 40px;
+    padding: 2vw 4vw;
     background: rgb(11, 91, 51);
     color: white;
+}
 
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .logo,
+    ul {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 1vw;
+    }
+
+    ul,
+    li,
+    a {
+        display: block;
+        padding: 2vw;
+    }
+
+    .content-header h1 {
+        font-size: 8vw;
+    }
+
+    .content-header p {
+        font-size: 2vw;
+        margin: 2vw;
+    }
+
+    .content-header a {
+        font-size: 1.5vw;
+        padding: 2vw 4vw;
+    }
 }
