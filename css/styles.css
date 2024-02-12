@@ -1,111 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dosis:wght@600&family=Work+Sans&display=swap');
 
-* {
-    box-sizing: border-box;
+html, body {
+  font-family: 'Work Sans', sans-serif; /* Set base font family */
+  margin: 0; /* Remove default margin for better control */
+  font-size: 100%; /* Ensure consistent font sizing */
+  line-height: 1.6; /* Set comfortable line height */
 }
 
-body {
-    margin: 0;
+* {
+  box-sizing: border-box;
 }
 
 .main-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Img/parque.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    font-family: 'Dosis', sans-serif;
-    position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Img/parque.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* Remove font-family as defined in body */
+  position: relative;
 }
 
 .main-nav {
-    display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  display: flex;
+  justify-content: space-between; /* Responsive alignment */
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  padding: 20px 40px; /* Apply padding consistently */
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5%;
-    padding: 20px 2vw;
-    font-size: 1.3rem;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
 }
 
 ul {
-    display: flex;
-    margin-left: auto;
-    margin-right: 5%;
+  display: flex;
+  /* Use more generic margin properties */
+  margin: 0 auto; /* Center horizontally on screens of all sizes */
 }
 
 ul, li, a {
-    display: inline-block;
-    padding: 20px 2vw;
-    font-size: 1.3rem;
-    color: white;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  color: white;
 }
 
 .content-header {
-    color: antiquewhite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  color: antiquewhite;
+  position: absolute;
+  /* Remove duplicate position declaration */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .content-header h1 {
-    font-size: 5vw;
+  font-size: 7rem;
 }
 
 .content-header p {
-    font-size: 1.5vw;
-    margin: 1.5vw;
+  font-size: 1.5rem;
+  margin: 15px; /* Use a single margin property */
 }
 
 .content-header a {
-    font-size: 1.3vw;
-    display: inline-block;
-    padding: 2vw 4vw;
-    background: rgb(11, 91, 51);
-    color: white;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 20px 40px;
+  background: rgb(11, 91, 51);
+  color: white;
 }
 
-@media (max-width: 768px) {
-    .main-nav {
-        flex-direction: column;
-    }
+/* Media queries for responsive adjustments */
 
-    .logo,
-    ul {
-        margin: 0;
-        text-align: center;
-        width: 100%;
-    }
+@media only screen and (max-width: 768px) {
+  .main-header {
+    /* Adjust background image for smaller screens */
+    background-size: contain;
+  }
 
-    .logo {
-        margin-bottom: 1vw;
-    }
+  .logo {
+    /* Scale down logo font size on smaller screens */
+    font-size: 1.2rem;
+  }
 
-    ul,
-    li,
-    a {
-        display: block;
-        padding: 2vw;
-    }
+  ul {
+    /* Wrap menu items on narrow screens */
+    flex-wrap: wrap;
+  }
 
-    .content-header h1 {
-        font-size: 8vw;
-    }
+  ul, li, a {
+    /* Reduce padding on smaller screens */
+    padding: 10px 20px;
+  }
 
-    .content-header p {
-        font-size: 2vw;
-        margin: 2vw;
-    }
+  .content-header h1 {
+    /* Scale down heading font size on smaller screens */
+    font-size: 5rem;
+  }
 
-    .content-header a {
-        font-size: 1.5vw;
-        padding: 2vw 4vw;
-    }
+  .content-header p {
+    /* Adjust padding on smaller screens */
+    padding: 10px;
+  }
 }
